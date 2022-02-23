@@ -11,13 +11,13 @@ public class SimpleTest extends TestBase {
     @Tag("simple")
     @Test
      void selenideSearchTest() {
-        open("https://www.google.com/");
+        open("https://www.google.ru/");
         $("[name=q]").setValue("selenide").pressEnter();
         $("[id=search]").shouldHave(text("selenide.org"));
     }
     @Test
     void selenideSearchSecondTest() {
-        open("https://www.google.com/");
+        open("https://www.google.ru/");
         $("[name=q]").setValue("selenide").pressEnter();
         $("[id=search]").shouldHave(text("selenide.org"));
     }
