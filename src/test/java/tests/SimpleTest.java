@@ -7,8 +7,8 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-@Tag("simple")
-public class SimpleTest {
+public class SimpleTest extends TestBase {
+    @Tag("simple")
     @Test
      void selenideSearchTest() {
         open("https://www.google.com/");
